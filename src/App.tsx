@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
 
-      22.08.2023
+      <h1>22.08.2023 Typescript tutorial</h1>
 
     </div>
   );
