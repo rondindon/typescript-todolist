@@ -1,0 +1,52 @@
+.input{
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+
+    .input-box{
+    width: 100%;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-size: 2em;
+    border: none;
+    transition: .3s;
+
+        &:focus{
+            box-shadow: 0 0 10px 1000px rgba(0,0,0,.2);
+            outline: none;
+        }
+    }
+
+    .submit-btn{
+        position: absolute;
+        right: 0px;
+        border-radius: 30px;
+        height: 80%;
+        width: 5rem;
+        cursor: pointer;
+        background-color:rgb(168, 111, 201);
+        color: whitesmoke;
+        border:none;
+        font-size: 1.5em;
+        box-shadow: 0 0 10px #232323;
+        margin-right: 1rem;
+        transition: .3s all;
+
+        &:hover{
+            background-color:rgb(153, 56, 209) ;
+        }
+
+        &:active{
+            transform: scale(0.8);
+            box-shadow: 0 0 5px #232323;
+        }
+    }
+}
+
+.todos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
