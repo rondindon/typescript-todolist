@@ -10,7 +10,7 @@
     .heading{
         color: rgb(195, 132, 231);
         text-transform: uppercase;
-        font-size: 7em;
+        font-size: clamp(5.44em,6em,6.88em);
         z-index: 1;
         text-align: center;
         padding: 1rem;

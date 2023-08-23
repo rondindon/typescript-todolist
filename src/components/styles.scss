@@ -1,6 +1,6 @@
 .input{
     display: flex;
-    width: 90%;
+    width: 70%;
     position: relative;
     align-items: center;
 
@@ -49,4 +49,46 @@
     justify-content: space-evenly;
     width: 90%;
     flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.todos-single{
+    display: flex;
+    width: 25%;
+    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: rgb(195, 132, 231);
+    margin: 1rem;
+    font-weight: bold;
+
+    .todos-single-text{
+        flex: 1;
+        padding: .5rem;
+        font-size: 1.7em;
+    }
+
+    .icons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        .icon{
+            font-size: 2em;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:1000px){
+    .input{
+        width: 90%;
+    }
+
+    .todos{
+        width: 90%;
+    }
+
+    .todos-single{
+        width: 100%;
+    }
 }
