@@ -2,7 +2,6 @@ import React,{useState,useRef,useEffect} from 'react'
 import { Todo } from './Model';
 import {AiFillEdit,AiFillDelete} from 'react-icons/ai'
 import {MdDone} from 'react-icons/md'
-import { Todolist } from './Todolist';
 
 interface Props {
     todo: Todo;
