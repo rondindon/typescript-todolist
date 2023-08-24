@@ -37,7 +37,7 @@ export const SingleTodo = ({todo,todos,setTodos} : Props) => {
 
     useEffect(() =>{
         inputRef.current?.focus();
-    },[edit])
+    },[edit]);
 
   return (
     <form className='todos-single' onSubmit={(event) => handleEdit(event,todo.id)}>
