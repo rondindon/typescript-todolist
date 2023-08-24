@@ -77,6 +77,17 @@
             cursor: pointer;
         }
     }
+    .todos-single-edit{
+        font-size: 1.7em;
+        width: 80%;
+        padding: .5rem;
+        margin-right: 1rem;
+        font-family: monospace;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
 }
 
 @media (max-width:1000px){
