@@ -2,7 +2,7 @@ export interface Todo{
     id: number;
     todo: string;
     isDone: boolean;
-}; 
+};
 
 // import { useReducer } from "react";
 
