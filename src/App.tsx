@@ -3,7 +3,7 @@ import './App.scss';
 import { InputField } from './components/InputField';
 import { Todo } from './components/Model';
 import { Todolist } from './components/Todolist';
-import {DragDropContext, DropResult} from 'react-beautiful-dnd'
+import {DragDropContext, DropResult} from 'react-beautiful-dnd';
 
 // let name: string;
 // let age: number;
