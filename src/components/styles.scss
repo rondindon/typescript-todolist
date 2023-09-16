@@ -44,22 +44,45 @@
     }
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 2rem;
+}
+
 .todos{
     display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    width: 45%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(93, 196, 196);
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: .3s;
+
+    .todos-header{
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+    }
 }
 
 .todos-single{
     display: flex;
-    width: 25%;
     border-radius: 5px;
     padding: 1.5rem;
     background-color: rgb(195, 132, 231);
     margin: 1rem;
     font-weight: bold;
+    transition: .2s;
+
+    &:hover{
+        box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transform: scale(1.03);
+    }
 
     .todos-single-text{
         flex: 1;
@@ -90,6 +113,22 @@
     }
 }
 
+.remove{
+    background-color: rgb(194, 103, 103);
+}
+
+.drag-remove{
+    background-color: rgb(240, 128, 128);
+}
+
+.drag-active{
+    background-color: rgb(99, 236, 236);
+}
+
+.drag{
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
 @media (max-width:1000px){
     .input{
         width: 90%;
@@ -98,8 +137,17 @@
     .todos{
         width: 90%;
     }
+}
 
-    .todos-single{
-        width: 100%;
+@media (max-width:1200px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .todos{
+            width: 70%;
+        }
     }
 }
