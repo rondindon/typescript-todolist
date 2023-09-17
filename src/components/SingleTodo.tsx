@@ -65,7 +65,7 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
         
                     <span className='icon' onClick={ () => {
                         if(!edit && !todo.isDone){
-                            setEdit(!edit)
+                            setEdit(!edit);
                         }
         
                     }}><AiFillEdit /></span>
@@ -80,4 +80,4 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
     </Draggable>
 
     )
-}
+};
