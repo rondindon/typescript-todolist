@@ -39,6 +39,7 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
     useEffect(() =>{
         inputRef.current?.focus();
     },[edit]);
+    
 
   return (
     <Draggable draggableId={todo.id.toString()} index={index}>
@@ -78,6 +79,5 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
             )
         }
     </Draggable>
-
     )
 };
