@@ -41,6 +41,7 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
     },[edit]);
 
   return (
+    
     <Draggable draggableId={todo.id.toString()} index={index}>
         {
             (provided,snapshot) => (
