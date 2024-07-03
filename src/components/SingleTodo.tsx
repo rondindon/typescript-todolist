@@ -77,7 +77,6 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
                 </div>
         
             </form>
-            
             )
         }
 
