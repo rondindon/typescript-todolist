@@ -75,11 +75,15 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
                     </span>
 
                     <span className='icon' onClick={() => {handleDelete(todo.id)}}
+
                         ><AiFillDelete />
+                        
                     </span>
 
                     <span className='icon' onClick={() => {handleDone(todo.id)}}>
+
                         <MdDone />
+
                     </span>
         
                 </div>
