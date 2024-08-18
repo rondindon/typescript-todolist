@@ -70,7 +70,9 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
                             setEdit(!edit);
                         }
         
-                    }}><AiFillEdit />
+                    }} 
+                    
+                        ><AiFillEdit />
 
                     </span>
 
