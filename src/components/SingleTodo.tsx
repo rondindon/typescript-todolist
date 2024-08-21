@@ -66,6 +66,7 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
                 <div className='icons'>
         
                     <span className='icon' onClick={ () => {
+                        
                         if(!edit && !todo.isDone){
                             setEdit(!edit);
                         }
