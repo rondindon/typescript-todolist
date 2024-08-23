@@ -25,6 +25,7 @@ export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
     }
 
     const handleEdit = (event: React.FormEvent, id: number) => {
+        
         event.preventDefault();
 
         setTodos(todos.map((todo) => (
