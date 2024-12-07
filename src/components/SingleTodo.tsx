@@ -11,8 +11,7 @@ interface Props {
     setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
-export const SingleTodo = ({index,todo,todos,setTodos} : Props) => {
-
+export const SingleTodo = ({index,todo,todos,setTodos} : Props) => { 
     const [edit, setEdit] = useState<boolean>(false);
     const [editTodo, setEditTodo] = useState<string>(todo.todo);
 
